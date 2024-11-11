@@ -9,7 +9,7 @@ export default function Navbar()
     const currentPath = usePathname()
 
     return (
-        <nav className="bg-white shadow-md h-[70px] w-screen px-8 flex justify-between items-center text-green-500">
+        <nav className="bg-white shadow-md h-[70px] w-screen px-8 flex justify-between items-center text-green-500 fixed z-20">
             <Link href="/">
                 <h1 className="logo text-2xl">Clothes4U</h1>
             </Link>
