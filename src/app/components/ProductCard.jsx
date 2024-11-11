@@ -1,13 +1,15 @@
 import Link from 'next/link'
-
-import Button from './Button.jsx'
 import Image from 'next/image'
 import heroBg from '../images/hero_bg.jpg'
+
+import Button from './Button.jsx'
+
+
 
 export default function ProductCard() 
 {
     return (
-        <>
+        <div>
             <article className="relative border-2 border-green-300 h-[300px] w-fit p-2 rounded-md transition ease-in duration-150 hover:shadow-md">
                 <header className="group relative header product-card-header">
                     <Link href="#0">
@@ -30,8 +32,7 @@ export default function ProductCard()
                 </div>
                 <Button className="{absolute mt-8 left-[50%] translate-x-[50%] bg-green-500 text-white p-2 w-fit whitespace-nowrap rounded-md cursor-pointer}">Tilføj til kurv</Button>
             </article>
-        
-        </>
+        </div>
     ) 
 
 }
