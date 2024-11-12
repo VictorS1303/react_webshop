@@ -2,7 +2,6 @@ import Link from 'next/link'
 
 import Button from './Button.jsx'
 import Image from 'next/image'
-import heroBg from '../images/hero_bg.jpg'
 
 export default async function ProductCard() 
 {
@@ -12,7 +11,7 @@ export default async function ProductCard()
     console.log(data) // Print fetched data for debugging
 
     return (
-        <>
+        <div className="flex flex-wrap justify-center items-center gap-30">
             {
                 data.products.map((product, index) => (
                     <article key={index} className="flex flex-col items-center border-2 border-green-300 h-[300px] w-[200px] p-2 rounded-md transition ease-in duration-150 hover:shadow-md">
@@ -45,7 +44,7 @@ export default async function ProductCard()
                     
                 ))
             }        
-        </>
+        </div>
     ) 
 
 }
