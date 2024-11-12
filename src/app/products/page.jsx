@@ -1,12 +1,10 @@
-<<<<<<< HEAD
+'use client'
+
 import Navbar from "../components/Navbar.jsx"
 import ProductCardsContainer from "../components/ProductCardsContainer.jsx"
-=======
-'use client'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import Navbar from "../components/Navbar"
->>>>>>> Navbar
+
 
 export default function () 
 {
@@ -14,10 +12,6 @@ export default function ()
 
     return (
         <>
-<<<<<<< HEAD
-            <Navbar />
-            <ProductCardsContainer />
-=======
             <Navbar>
                 <Link href="/">
                     <h1 className="logo text-2xl">Clothes4U</h1>
@@ -32,7 +26,7 @@ export default function ()
                     </li>
                 </ul>
             </Navbar>
->>>>>>> Navbar
+            <ProductCardsContainer />
         </>
     ) 
 }

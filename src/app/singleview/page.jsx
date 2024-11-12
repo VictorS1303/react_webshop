@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import Navbar from "../components/Navbar"
+import Navbar from "../components/Navbar.jsx"
 
 export default function Product() 
 {

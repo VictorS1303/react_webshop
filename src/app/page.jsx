@@ -1,23 +1,17 @@
-<<<<<<< HEAD
-import Navbar from './components/Navbar.jsx'
-import Hero from './components/Hero.jsx'
-=======
 'use client'
+
+import Navbar from "./components/Navbar.jsx"
+import Hero from "./components/Hero.jsx"
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import Navbar from "./components/Navbar"
->>>>>>> Navbar
 
-export default function Page() 
+
+export default function () 
 {
     const currentPath = usePathname()
 
     return (
         <>
-<<<<<<< HEAD
-            <Navbar />
-            <Hero />
-=======
             <Navbar>
                 <Link href="/">
                     <h1 className="logo text-2xl">Clothes4U</h1>
@@ -32,7 +26,7 @@ export default function Page()
                     </li>
                 </ul>
             </Navbar>
->>>>>>> Navbar
+            <Hero />
         </>
     ) 
 }
