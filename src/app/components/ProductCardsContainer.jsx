@@ -4,7 +4,6 @@ import Basket from './Basket.jsx'
 
 export default function ProductCardsContainer() 
 {
-    
     return (
         <div className="flex justify-between items-center h-screen pt-[70px] px-48">
             <Section>
