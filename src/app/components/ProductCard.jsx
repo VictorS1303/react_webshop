@@ -1,8 +1,10 @@
 import Link from 'next/link'
-
-import Button from './Button.jsx'
 import Image from 'next/image'
 import heroBg from '../images/hero_bg.jpg'
+
+import Button from './Button.jsx'
+
+
 
 export default function ProductCard() 
 {
