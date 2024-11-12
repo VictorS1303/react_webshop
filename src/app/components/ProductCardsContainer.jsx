@@ -3,6 +3,8 @@ import ProductCard from './ProductCard.jsx'
 
 export default function ProductCardsContainer() 
 {
+
+    
     return (
         <div className="flex justify-center items-center h-screen pt-[70px]">
             <Section>
