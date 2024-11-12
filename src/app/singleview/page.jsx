@@ -30,7 +30,7 @@ export default function Product()
                             src={heroBg}
                             height={400}
                             width={400}
-                            className="w-full"
+                            className="w-full rounded-lg"
                         />
                         <div class="thumbnails-container flex justify-between mt-4">
                             <Image className="rounded-md cursor-pointer transition ease-in duration-150 hover:opacity-85" src={heroBg} height={120} width={120} />
