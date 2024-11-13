@@ -15,9 +15,9 @@ export default async function ProductCard()
         <>
             {
                 data.products.map((product, index) => (
-                    <article key={index} className="flex flex-col items-center border-2 border-green-300 h-[300px] w-[200px] p-2 rounded-md transition ease-in duration-150 hover:shadow-md">
+                    <article key={product.id} className="flex flex-col items-center border-2 border-green-300 h-[300px] w-[200px] p-2 rounded-md transition ease-in duration-150 hover:shadow-md">
                         <header className="group relative header product-card-header">
-                            <Link href={`/product/${product.id}`}>
+                            <Link href={`/singleview/${product.id}`}>
                                 <Image 
                                     src={product.thumbnail} 
                                     className="rounded-md" 
