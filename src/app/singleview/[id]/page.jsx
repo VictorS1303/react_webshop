@@ -24,7 +24,7 @@ export default function Product() {
 
     if (!product)
     {
-        return <p className="absolute top-[50%] left-[50%] -transform-[-50%] text-black">Loading...</p>        
+        return <p className="absolute top-[50%] left-[50%] -transform-[-50%] text-black">Loading ...</p>        
     }
 
 
