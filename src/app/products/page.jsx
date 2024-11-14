@@ -1,12 +1,12 @@
 import Navbar from "../components/Navbar.jsx"
-import ProductCardsContainer from "../components/ProductCardsContainer.jsx"
+import Shop from "../components/Shop.jsx"
 
 export default function () 
 {
     return (
         <>
             <Navbar />
-            <ProductCardsContainer />
+            <Shop />
         </>
     ) 
 }

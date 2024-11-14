@@ -1,16 +1,27 @@
+import { useEffect, useState } from 'react'
 import Link from 'next/link'
 
 import Button from './Button.jsx'
 import Image from 'next/image'
 import heroBg from '../images/hero_bg.jpg'
 
-export default async function ProductCard({ addToBasket }) {
-    const response = await fetch('https://dummyjson.com/products?limit=30');
-    const data = await response.json();
+export default function ProductCard({ addToBasket })
+{
+    const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+        const fetchProducts = async () => {
+            const response = await fetch('https://dummyjson.com/products?limit=30');
+            const data = await response.json();
+            setProducts(data.products);
+        };
+
+        fetchProducts();
+    }, []);
 
     return (
         <>
-            {data.products.map((product, index) => (
+            {products.map((product, index) => (
                 <article
                     key={index}
                     className="flex flex-col items-center border-2 border-green-300 h-[300px] w-[200px] p-2 rounded-md transition ease-in duration-150 hover:shadow-md"
