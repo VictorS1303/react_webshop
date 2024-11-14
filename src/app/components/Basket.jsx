@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 export default function Basket({ basket }) {
     return (
-        <aside className="min-h-80 min-w-80 grid items-center align-center shadow-md pt-4 rounded-md border-2 border-green-300">
+        <aside className="h-[400px] min-w-80 grid items-center align-center shadow-md pt-4 rounded-md border-2 border-green-300 sticky top-0">
             <h2 className="text-green-500 text-2xl uppercase text-center">
                 Kurv
             </h2>

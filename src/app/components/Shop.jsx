@@ -17,7 +17,7 @@ export default function Shop()
     
     return (
         <Section>
-            <article className="shop flex my-auto">
+            <article className="shop flex h-[600px] overflow-x-auto mx-24 my-24">
                 <ProductCard addToBasket={addToBasket} />
                 <Basket basket={basket} />
             </article>            

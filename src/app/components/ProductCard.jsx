@@ -26,7 +26,7 @@ export default function ProductCard({ addToBasket })
                     className="flex flex-col border-2 border-green-300 h-[350px] w-[200px] p-4 rounded-md transition ease-in duration-150 hover:shadow-md"
                 >
                     <header className="relative flex-shrink-0">
-                        <Link href={`/product/${product.id}`}>
+                        <Link href={`/singleview/${product.id}`}>
                             <Image 
                                 src={product.thumbnail} 
                                 className="rounded-md" 
