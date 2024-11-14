@@ -1,7 +1,7 @@
 'use client'
 
 import Navbar from "../components/Navbar.jsx"
-import ProductCardsContainer from "../components/ProductCardsContainer.jsx"
+import Shop from "../components/Shop.jsx"
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
@@ -26,7 +26,7 @@ export default function ()
                     </li>
                 </ul>
             </Navbar>
-            <ProductCardsContainer />
+            <Shop />
         </>
     ) 
 }
