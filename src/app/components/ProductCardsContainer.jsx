@@ -1,6 +1,6 @@
 import Section from './Section.jsx'
 import ProductCard from './ProductCard.jsx'
-import Basket from './Basket.jsx'
+
 
 export default function ProductCardsContainer() 
 {
@@ -11,9 +11,7 @@ export default function ProductCardsContainer()
                    <ProductCard />
                 </div>
             </Section>
-
     
-            <Basket />
         </div>
     ) 
 }
