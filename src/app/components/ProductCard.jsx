@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Button from './Button.jsx'
 import Image from 'next/image'
 
-export default function ProductCard({ addToBasket })
+export default function ProductCard({ setBasket })
 {
     const [products, setProducts] = useState([]);
 
@@ -20,16 +20,17 @@ export default function ProductCard({ addToBasket })
 
     return (
         <div className="flex flex-wrap justify-center items-center gap-6">
-            {products.map((product) => (
+            {products.map((product) => {
+                return(
                 <article 
                     key={product.id}
-                    className="flex flex-col border-2 border-green-300 h-[350px] w-[200px] p-4 rounded-md transition ease-in duration-150 hover:shadow-md"
+                    className="flex flex-col border-2 border-green-300 h-[350px] w-[250px] p-4 rounded-md transition ease-in duration-150 hover:shadow-md"
                 >
                     <header className="relative flex-shrink-0">
                         <Link href={`/singleview/${product.id}`}>
                             <Image 
                                 src={product.thumbnail} 
-                                className="rounded-md" 
+                                className="rounded-md mx-auto" 
                                 height={140} 
                                 width={140} 
                                 alt="product card image" 
@@ -52,14 +53,14 @@ export default function ProductCard({ addToBasket })
                         </div>
 
                         <Button
-                            onClick={() => addToBasket(product)}
+                            onClick={() => setBasket((oldState) => oldState.concat(product))}
                             className="mt-auto bg-green-500 text-white p-2 w-full rounded-md cursor-pointer"
                         >
                             Tilføj til kurv
                         </Button>
                     </div>
                 </article>
-            ))}
+            )})}
         </div>
     );
 }

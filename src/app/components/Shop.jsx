@@ -11,6 +11,7 @@ export default function Shop()
 
     const addToBasket = (product) =>
     {
+        console.log('Product')
         setBasket([...basket, product])
     }
 
@@ -18,7 +19,7 @@ export default function Shop()
     return (
         <Section>
             <article className="shop flex h-[600px] overflow-x-auto mx-24 my-24">
-                <ProductCard addToBasket={addToBasket} />
+                <ProductCard setBasket={setBasket} />
                 <Basket basket={basket} />
             </article>            
         </Section>

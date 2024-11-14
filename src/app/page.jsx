@@ -14,7 +14,7 @@ export default function ()
         <>
             <Navbar>
                 <Link href="/">
-                    <h1 className="logo text-2xl">Clothes4U</h1>
+                    <h1 className="logo text-2xl">Shop4U</h1>
                 </Link>
 
                 <ul className="flex gap-10">
